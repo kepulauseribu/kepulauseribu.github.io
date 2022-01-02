@@ -122,6 +122,7 @@ label{
  <center><h2>Hubungi Kami</h2>
  <h5>Jika kamu mempunyai pertanyaan atau kritik dan saran terkait situs web ini, silakan mengisi kolom pesan di bawah ini:<h5></center>
  <div class="mail">
+ <form name="Form-Contact-Us">
  <form action="send_mail.php" method="post">
 
  <div>
@@ -130,8 +131,8 @@ label{
  </div>
 
  <div>
- <label for="email">E-mail</label>
- <input type="text" name="Email">
+ <label for="email">Email</label>
+ <input type="email" name="Email">
  </div>
 
  <div>
@@ -141,10 +142,10 @@ label{
 
  <div>
  <label for="message">Pesan</label>
- <textarea name="pesan" id="" cols="30" rows="10"></textarea>
+ <textarea name="Pesan" id="" cols="30" rows="10"></textarea>
  </div>
 
- <div><input type="submit" value="Kirim"></div>
+ <div><input type="Submit" value="Kirim"></div>
 
  </form>
  </div>
@@ -157,5 +158,16 @@ label{
  <p> <img src="tiktok.png" alt="Gambar_Tiktok" style="width:20px;"> @official.kepulauseribu </p>
  <p> <img src="gmail.jpg" alt="Gambar_Gmail" style="width:20px;"> kepulauseribu@gmail.com </p></center>
 </div>
+<script>
+  const scriptURL = 'https://script.google.com/macros/s/AKfycbxXWNimW050YgOaGlEj9FzOaDKyL4kPjCilej1dJeohdCz1p4NQrBCkplsfdnUf-kVgLA/exec'
+  const form = document.forms['Form-Contact-Us']
+
+  form.addEventListener('submit', e => {
+    e.preventDefault()
+    fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+      .then(response => console.log('Success!', response))
+      .catch(error => console.error('Error!', error.message))
+  })
+</script>
 </body>
 </html>
