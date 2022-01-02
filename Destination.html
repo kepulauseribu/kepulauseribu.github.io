@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+  width: 100%;
+  border: 1px solid #ddd;
+}
+th, td {
+  text-align: left;
+  padding: 8px;
+}
+tr:nth-child(even){background-color: #f2f2f2}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "STLiti";
+  padding: 10px;
+  background: #FAE3D9;
+}
+
+/* Header/Blog Title */
+.header {
+  padding: 30px;
+  text-align: center;
+  background-image: url('header.png');
+  border-radius: 10px;
+}
+
+.header h1 {
+  font-size: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Style the top navigation bar */
+.topnav {
+  overflow: hidden;
+  margin-top: 15px;
+  margin-bottom: 15px;
+  border-radius: 5px;
+  background-color: #FFB6B9;
+}
+
+/* Style the topnav links */
+.topnav a {
+  float: left;
+  display: block;
+  color: #000000;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+/* Change color on hover */
+.topnav a:hover {
+  background-color: #edfafd;
+  color: black;
+}
+
+/* Fake image */
+.fakeimg {
+  background-color: #aaa;
+  width: 100%;
+  padding: 20px;
+}
+
+/* Add a card effect for articles */
+.card {
+  background-color: #edfafd;
+  padding: 20px;
+  margin-top: 20px;
+  border-radius: 10px;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Footer */
+.footer {
+  padding: 20px;
+  text-align: center;
+  background: #aed9da;
+  border-radius: 10px;
+  margin-top: 20px;
+}
+
+/* Responsive layout - when the screen is less than 800px wide, make the two columns stack on top of each other instead of next to each other */
+      @media screen and (max-width: 800px) {
+        .leftcolumn,
+        .rightcolumn {
+          width: 100%;
+          padding: 0;
+        }
+      }
+
+      /* Responsive layout - when the screen is less than 400px wide, make the navigation links stack on top of each other instead of next to each other */
+      @media screen and (max-width: 400px) {
+        .topnav a {
+          float: none;
+          width: 100%;
+        }
+      }
+</style>
+</head>
+
+<body>
+<div class="header">
+    <h1 style="margin-top: 105px;">Pulau Seribu</h1>
+    <p>Yuk cari tahu destinasi wisata yang menunggu untuk kamu kunjungi!</p>
+    </div>
+
+<div class="topnav" style="display: flex;flex-flow: row;justify-content: end;">
+      <a href="Home.html">Home</a>
+      <a href="AboutUs.html">About Us</a>
+      <a href="Destination.html">Destination</a>
+      <a href="ContactUs.html">Contact Us</a>
+    </div>
+
+<div class="row">
+  <div class="card">
+      <center> <h2>Yuk, Intip Keindahan Pulau Seribu!</h2> </center>
+      <img src="1.jpg" alt=" " style="width: 100%;max-height: 100%" />
+      <center> <div class="desc">Pulau Dolphin</div> </center>
+  </div>
+</div>
+
+<div class="row">
+  <div class="card">
+     <img src="5.jpg" alt=" " style="width: 100%;max-height: 100%" />
+      <center> <div class="desc">Pulau Tidung</div> </center>
+  </div>
+</div>
+
+<div class="row">
+  <div class="card">
+      <img src="4.jpg" alt=" " style="width: 100%;max-height: 100%" />
+      <center> <div class="desc">Pulau Pari</div> </center>
+  </div>
+</div>
+
+<div class="row">
+  <div class="card">
+   <img src="6.jpg" alt=" " style="width: 100%;max-height: 100%" />
+      <center> <div class="desc">Pulau Harapan</div> </center>
+  </div>
+</div>
+
+<div class="row">
+  <div class="card">
+    <img src="7.jpg" alt=" " style="width: 100%;max-height: 100%" />
+      <center> <div class="desc">Pulau Macan</div> </center>
+  </div>
+</div>
+
+<div style="row">
+  <div class="card">
+      <center> <p>Pulau Seribu paling terkenal dengan objek pantai, snorkling, dan olahraga airnya, padahal ada juga, lho, objek wisata lain yang tidak kalah menarik!</p> </center>
+  <table>
+  <table border="10" cellpadding="5" width="100%">
+    <tr>
+      <th>Objek</th>
+      <th>Tempat</th>
+    </tr>
+    <tr>
+      <td>Penangkaran Penyu</td>
+      <td>Pulau Pramuka</td>
+    </tr>
+    <tr>
+      <td>Penangkaran Hiu</td>
+      <td>Pulau Pramuka</td>
+    </tr>
+    <tr>
+      <td>Benteng Martello</td>
+      <td>Pulau Kelor</td>
+    </tr>
+    <tr>
+      <td>Museum & Tempat Bersejarah</td>
+      <td>Pulau Onrust</td>
+    </tr>
+  </table>
+  </div>
+</div>
+
+ <div class="footer">
+     <center><h2>Our Official Social Media Account</h2>
+ <p> <img src="instagram.jpg" alt="Gambar_Instagram" style="width:20px;"> @kepulauseribu.official </p>
+ <p> <img src="twitter.jpg" alt="Gambar_Twitter" style="width:20px;"> @kepulauseribu.official </p>
+ <p> <img src="tiktok.png" alt="Gambar_Tiktok" style="width:20px;"> @official.kepulauseribu </p>
+ <p> <img src="gmail.jpg" alt="Gambar_Gmail" style="width:20px;"> kepulauseribu@gmail.com </p></center>
+</div>
+</body>
+</html>

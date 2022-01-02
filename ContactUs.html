@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+* {
+ box-sizing: border-box;
+}
+body {
+ font-family: STLiti;
+ padding: 10px;
+ background: #FAE3D9;
+}
+/* Header/Blog Title */
+.header {
+  padding: 30px;
+  text-align: center;
+  background-image: url('header.png');
+  border-radius: 10px;
+}
+.header h1 {
+  font-size: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+/* Style the top navigation bar */
+.topnav {
+    overflow: hidden;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    border-radius: 5px;
+    background-color: #FFB6B9;
+}
+/* Style the topnav links */
+.topnav a {
+ float: center;
+ display: block;
+ color: #000000;
+ text-align: center;
+ padding: 14px 16px;
+ text-decoration: none;
+}
+/* Change color on hover */
+.topnav a:hover {
+ background-color:  #edfafd;
+ color: black;
+}
+/* Fake image */
+      .fakeimg {
+        background-color: #aaa;
+        width: 100%;
+        padding: 20px;
+}
+/* Add a card effect for articles */
+.card {
+ background-color:#edfafd;
+ padding: 20px;
+ margin-top: 20px;
+ border-radius: 10px;
+}
+/* Clear floats after the columns */
+.row:after {
+ content: "";
+ display: table;
+ clear: both;
+}
+/* Footer */
+.footer {
+ padding: 20px;
+ text-align: center;
+ background: #aed9da;
+ border-radius: 10px;
+ margin-top: 20px;
+}
+.mail{
+ width: 730px;
+ margin: 10px auto;
+ border: 1px solid #aed9da;
+ padding: 10px;
+ }
+.mail div{
+ padding: 5px 0;
+ border-bottom: 1px solid #aed9da;
+ }
+label{
+ width: 100px;
+ display: inline-block;
+ }
+.bottom{
+ font-size: 12px;
+ text-align: right;
+ }
+/* Responsive layout - when the screen is less than 800px wide, make the two columns stack on top of each other instead of next
+@media screen and (max-width: 800px) {
+ .leftcolumn, .rightcolumn {
+ width: 100%;
+ padding: 0;
+ }
+}
+/* Responsive layout - when the screen is less than 400px wide, make the navigation links stack on top of each other instead of
+@media screen and (max-width: 400px) {
+ .topnav a {
+ float: none;
+ width: 100%;
+ }
+}
+</style>
+</head>
+<body>
+ <div class="header">
+    <h1 style="margin-top: 105px;">Pulau Seribu</h1>
+    <p>Yuk cari tahu destinasi wisata yang menunggu untuk kamu kunjungi!</p>
+    </div>
+<div class="topnav" style="display: flex;flex-flow: row;justify-content: end;">
+    <a href="Home.html">Home</a>
+    <a href="AboutUs.html">About Us</a>
+    <a href="Destination.html">Destination</a>
+    <a href="ContactUs.html">Contact Us</a>
+</div>
+<div class="row">
+ <div class="card">
+ <center><h2>Hubungi Kami</h2>
+ <h5>Jika kamu mempunyai pertanyaan atau kritik dan saran terkait situs web ini, silakan mengisi kolom pesan di bawah ini:<h5></center>
+ <div class="mail">
+ <form action="send_mail.php" method="post">
+
+ <div>
+ <label for="name">Nama</label>
+ <input type="text" name="Nama">
+ </div>
+
+ <div>
+ <label for="email">E-mail</label>
+ <input type="text" name="Email">
+ </div>
+
+ <div>
+ <label for="subject">Subjek</label>
+ <input type="text" name="Subjek">
+ </div>
+
+ <div>
+ <label for="message">Pesan</label>
+ <textarea name="pesan" id="" cols="30" rows="10"></textarea>
+ </div>
+
+ <div><input type="submit" value="Kirim"></div>
+
+ </form>
+ </div>
+ </div>
+</div>
+<div class="footer">
+ <center><h2>Our Official Social Media Account</h2>
+ <p> <img src="instagram.jpg" alt="Gambar_Instagram" style="width:20px;"> @kepulauseribu.official </p>
+ <p> <img src="twitter.jpg" alt="Gambar_Twitter" style="width:20px;"> @kepulauseribu.official </p>
+ <p> <img src="tiktok.png" alt="Gambar_Tiktok" style="width:20px;"> @official.kepulauseribu </p>
+ <p> <img src="gmail.jpg" alt="Gambar_Gmail" style="width:20px;"> kepulauseribu@gmail.com </p></center>
+</div>
+</body>
+</html>

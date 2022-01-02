@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: STLiti;
+ padding: 10px;
+ background: #FAE3D9;
+}
+
+/* Header/Blog Title */
+.header {
+  padding: 30px;
+  text-align: center;
+  background-image: url(header.png);
+  border-radius: 10px;
+}
+
+.header h1 {
+  font-size: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Style the top navigation bar */
+.topnav {
+  overflow: hidden;
+  margin-top: 15px;
+  margin-bottom: 15px;
+  border-radius: 5px;
+  background-color: #FFB6B9;
+}
+
+/* Style the topnav links */
+.topnav a {
+ float: left;
+ display: block;
+ color: #000000;
+ text-align: center;
+ padding: 14px 16px;
+ text-decoration: none;
+}
+
+/* Change color on hover */
+.topnav a:hover {
+ background-color:  #edfafd;
+ color: black;
+}
+
+/* Create two unequal columns that floats next to each other */
+/* Left column */
+.leftcolumn {   
+  float: left;
+  width: 100%;
+}
+/* Right column */
+.rightcolumn {
+  float: left;
+  width: 25%;
+ padding-left: 20px;
+}
+/* Fake image */
+.fakeimg {
+ background-color: #aaa;
+ width: 100%;
+ padding: 20px;
+}
+/* Add a card effect for articles */
+.card {
+ background-color:#edfafd;
+ padding: 20px;
+ margin-top: 20px;
+ border-radius: 10px;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.column {
+  float: left;
+  width: 25%;
+  margin-bottom: 16px;
+  padding: 0 8px;
+}
+
+.card2 {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  margin: 8px;
+background-color: white;
+}
+
+.container {
+  padding: 0 16px;
+}
+
+.container::after, .row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+.button {
+  border: none;
+  outline: 0;
+  display: inline-block;
+  padding: 10px;
+  color: black;
+  background-color: #FFB6B9;
+  text-align: center;
+  cursor: pointer;
+  width: 100%;
+}
+
+.button:hover {
+  background-color: #aed9da;
+}
+
+.clearfix:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+/* Footer */
+.footer {
+ padding: 20px;
+ text-align: center;
+ background: #aed9da;
+ border-radius: 10px;
+ margin-top: 20px;
+}
+/* Responsive layout - when the screen is less than 800px wide, 
+make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 800px) {
+  .leftcolumn, .rightcolumn {   
+    width: 100%;
+    padding: 0;
+  }
+}
+
+/* Responsive layout - when the screen is less than 400px wide, 
+make the navigation links stack on top of each other instead of next to each other */
+@media screen and (max-width: 400px) {
+  .topnav a {
+    float: none;
+    width: 100%;
+  }
+}
+</style>
+</head>
+<body>
+
+<div class="header">
+  <h1 style="margin-top: 105px;">Pulau Seribu</h1>
+  <p>Yuk cari tahu destinasi wisata yang menunggu untuk kamu kunjungi!</p>
+</div>
+
+<div class="topnav" style="display: flex;flex-flow: row;justify-content: end;">
+      <a href="Home.html">Home</a>
+      <a href="AboutUs.html">About Us</a>
+      <a href="Destination.html">Destination</a>
+      <a href="ContactUs.html">Contact Us</a>
+</div>
+<div class="row">
+      <div class="card">
+      <center><h2>Yuk, Kita Jalan ke Pulau Seribu!</h2></center>
+      <p>Selamat datang di situs web “Ke Pulau Seribu!” </p>
+      <p style="text-align: justify;">“Ke Pulau Seribu” merupakan sebuah situs web yang menghadirkan informasi mengenai tempat wisata di Kepulauan Seribu. Perlu diketahui, Kepulauan Seribu atau yang lebih umum dikenal sebagai Pulau Seribu merupakan sebuah wilayah seluas 4.745,62 km2 yang terdiri dari sekitar 110 pulau. Berikut beberapa pulau yang terkenal di Kepulauan Seribu:</p>
+      <li>Pulau Ayer</li>
+      <li>Pulau Harapan</li>
+      <li>Pulau Pramuka</li>
+      <li>Pulau Semak Daun</li>
+      <li>Dan masih banyak lagi.</li>
+      <p style="text-align: justify;">Dengan berbagai pilihan pulaunya, Kepulauan Seribu bisa dikatakan dapat menjadi tempat wisata yang tak kalah unik dan menarik apabila dibandingkan dengan tempat wisata pantai lainnya. Oleh karena itu, melalui situs web ini, kami berharap dapat memperkenalkan beragam tempat dan hal menarik yang dapat ditemui hanya di Pulau Seribu.</p>
+      <p>Semoga informasi yang dibagikan dalam situs web ini dapat membantu teman-teman dalam menyusun perjalanan wisata ke Pulau Seribu. ENJOY READING!</p></center>
+      </div>
+    </div>
+<div class="row">
+    <div class="card">
+      <h2 style="text-align:center">Our Team</h2>
+      <p style="text-align:center">Ayo kenalan dengan anggota tim kami!</p>
+      <div class="row">
+        <div class="column">
+          <div class="card2">
+            <center><img src="Angel.jpeg" style="width:50%"></center>
+            <div class="container">
+              <center><h2>Angelina</h2>
+              <p class="title">12180004</p>
+              <p>s12180004@student.ubm.ac.id</p></center>
+              <p><a href="mailto:s12180004@student.ubm.ac.id"><button class="button">Contact</button></a></p>
+            </div>
+          </div>
+        </div>
+      
+        <div class="column">
+          <div class="card2">
+            <center><img src="Erika.jpg" style="width:50%"></center>
+            <div class="container">
+              <center><h2>Erika Natahsya</h2>
+              <p class="title">12180003</p>
+              <p>s12180003@student.ubm.ac.id</p></center>
+              <p><a href="mailto:s12180003@student.ubm.ac.id"><button class="button">Contact</button></a></p>
+            </div>
+          </div>
+        </div>
+        
+        <div class="column">
+          <div class="card2">
+            <center><img src="Oliv.jpeg" style="width:50%"></center>
+            <div class="container">
+              <center><h2>Olivia Drango</h2>
+              <p class="title">12180340</p>
+              <p>s12180340@student.ubm.ac.id</p></center>
+              <p><a href="mailto:s12180340@student.ubm.ac.id"><button class="button">Contact</button></a></p>
+            </div>
+          </div>
+        </div>
+        
+          <div class="column">
+            <div class="card2">
+              <center><img src="Padma.jpeg" style="width:50%"></center>
+              <div class="container">
+                <center><h2>Padmawati</h2>
+                <p class="title">12180160</p>
+                <p>s12180160@student.ubm.ac.id</p></center>
+                <p><a href="mailto:s12180160@student.ubm.ac.id"><button class="button">Contact</button></a></p>
+              </div>
+            </div>
+          </div>
+          </div>
+
+<div class="footer"> 
+ <center><h2>Our Official Social Media Account</h2>
+ <p> <img src="instagram.jpg" alt="Gambar_Instagram" style="width:20px;"> @kepulauseribu.official </p>
+ <p> <img src="twitter.jpg" alt="Gambar_Twitter" style="width:20px;"> @kepulauseribu.official </p>
+ <p> <img src="tiktok.png" alt="Gambar_Tiktok" style="width:20px;"> @official.kepulauseribu </p>
+ <p> <img src="gmail.jpg" alt="Gambar_Gmail" style="width:20px;"> kepulauseribu@gmail.com </p></center>
+</div>
+</body>
+</html>
